@@ -1,0 +1,12 @@
+{
+	"appId": "uz.actimed.app",
+	"appName": "ACTIMED",
+	"webDir": "www",
+	"backgroundColor": "#F7FAF5",
+	"ios": {
+		"contentInset": "never",
+		"backgroundColor": "#F7FAF5",
+		"scrollEnabled": false
+	},
+	"packageClassList": []
+}
