@@ -32,7 +32,6 @@ jobs:
 
       - name: Copy web app into the iOS project
         run: |
-          rm -rf ios/App/App/public && mkdir -p ios/App/App/public
           cp -R www/. ios/App/App/public/
 
       - name: Write App Store Connect API key
