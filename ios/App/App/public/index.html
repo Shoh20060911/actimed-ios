@@ -1062,6 +1062,10 @@ button.wkcoin:active{transform:scale(.985)}
 .app.dark:not(.nodarkf) :is(.hero,.bandban,.plusban,.ecge.main,.hrmcard,.monitor,.coinhero,.wkcoin,.coinchip,.kscan,.island,.cam,.p0hero,.pbuy,.wlive) :is(img,.objart,.wksc,.cambg,.ecgmon,.kthumb,.devimg,.p0img,.pava,.avpic){filter:none!important}
 .app.dark:not(.nodarkf){filter:invert(1) hue-rotate(180deg)}
 .app.dark:not(.nodarkf) img,.app.dark:not(.nodarkf) .objart,.app.dark:not(.nodarkf) .wksc,.app.dark:not(.nodarkf) .cambg,.app.dark:not(.nodarkf) .pava,.app.dark:not(.nodarkf) .avpic,.app.dark:not(.nodarkf) .avopt svg,.app.dark:not(.nodarkf) .kthumb,.app.dark:not(.nodarkf) .th,.app.dark:not(.nodarkf) .promo img,.app.dark:not(.nodarkf) .ecgmon,.app.dark:not(.nodarkf) .logoimg,.app.dark:not(.nodarkf) .flag,.app.dark:not(.nodarkf) video{filter:invert(1) hue-rotate(180deg)}
+
+/* dark mode: keep real photo colours (a re-inverted wrapper must not re-invert its image again) */
+.app.dark:not(.nodarkf) :is(.objart,.wksc,.cambg,.pava,.avpic,.kthumb,.th,.ecgmon,.logoimg,.flag) :is(img,video,svg,.objart,.wksc,.cambg,.pava,.avpic,.kthumb,.th,.ecgmon,.logoimg,.flag){filter:none!important}
+.app.dark:not(.nodarkf) .splash .applogo{filter:invert(1) hue-rotate(180deg)}
 /* native dark for language screen (keeps flag colours exact) */
 .app.dark.nodarkf,.app.dark.nodarkf #main,.app.dark.nodarkf .pg{background:#0E110F!important;color:#EEF2EE}
 .app.dark.nodarkf .statusbar{color:#fff}
